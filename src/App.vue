@@ -18,4 +18,8 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+#app,html,body{
+  width: 100%;
+  height: 100%;
+}
 </style>

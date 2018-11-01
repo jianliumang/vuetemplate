@@ -1,6 +1,29 @@
 .home{
+    width: 100%;
+    height: 100%;
     .el-row:first-child {
         background: #CCC;
+        height: 80px;
+    }
+    .el-row:last-child {
+        height: calc(100% - 80px);
+        .el-col-4{
+            height: 100%;
+        }
+        .el-col-4>ul{
+            height: 100%;
+            // background: #ccc;
+        }
+        .el-menu-item.is-active{
+            background-color: #000!important;
+        }
+        // .el-submenu div{
+        //     padding: 0px!important;
+        // }
+        .el-menu-item,.el-submenu,.el-submenu__title{
+            text-align: left;
+            // padding: 0px!important;
+        }
     }
     .el-row>.el-col:nth-child(1) {
         width: 250px;

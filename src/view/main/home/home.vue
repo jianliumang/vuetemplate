@@ -8,6 +8,9 @@
                 :default-openeds="openensArr"
                 router
                 class="el-menu-vertical-demo"
+                background-color="#545c64"
+                text-color="#fff"
+                active-text-color="#ffd04b"
                 @open="handleOpen"
                 @close="handleClose">
                     <template v-for="routes in $router.options.routes" v-if="routes.hidden">
@@ -17,9 +20,9 @@
                                     <i class="el-icon-location"></i>
                                     <span>{{route.name}}</span>
                                 </template>
-                                <el-menu-item-group>
+                                <!-- <el-menu-item-group> -->
                                     <el-menu-item v-for="(subroute,subindex) in route.children" :key="'sub'+subindex" :index="subroute.path">{{subroute.name}}</el-menu-item>
-                                </el-menu-item-group>
+                                <!-- </el-menu-item-group> -->
                             </el-submenu>
                             <el-menu-item :index="route.path" :key="'menu'+index" v-if="!route.children">
                                 <i class="el-icon-menu"></i>
