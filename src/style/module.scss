@@ -1,0 +1,7 @@
+//实心圆
+@mixin circle ($w:100px, $h:100px, $c:#f61344 , $rad:50%){
+    width: $w;
+    height: $h;
+    background: $c;
+    border-radius: $rad;
+}

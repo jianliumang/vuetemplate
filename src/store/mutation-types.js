@@ -1,0 +1,2 @@
+export const CHANGE_FIRST = 'CHANGE_FIRST'
+export const CHANGE_LAST = 'CHANGE_LAST'
